@@ -15,9 +15,9 @@ export async function GET() {
     });
 
     // Trasforma i dati in formato più user-friendly
-    const formattedProducts = products.map((product) => {
+    const formattedProducts = products.map((product: any) => {
       const attributes: Record<string, string> = {};
-      product.attributes.forEach((attr) => {
+      product.attributes.forEach((attr: any) => {
         attributes[attr.attributeName] = attr.attributeValue;
       });
 
@@ -29,7 +29,7 @@ export async function GET() {
         immagine: product.immagine,
         conservazione: attributes.conservazione || '',
         ingredienti: attributes.ingredienti || '',
-        varianti: product.varianti.map((v) => {
+        varianti: product.varianti.map((v: any) => {
           const variant: { tipo?: string; peso: string; prezzo: number; prezzoKg?: number } = {
             peso: v.peso,
             prezzo: v.prezzo,

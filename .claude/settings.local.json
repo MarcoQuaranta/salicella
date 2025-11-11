@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(npm run build:*)",
+      "WebSearch",
+      "Bash(npm install:*)",
+      "Bash(npx prisma:*)",
+      "Bash(.env)",
+      "Bash(npm run db:seed:*)",
+      "Bash(npx tsx:*)",
+      "Bash(nul)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(rm:*)",
+      "Bash(del nul \"C:salicellaREADME.md\" 2)",
+      "Bash(gh --version:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

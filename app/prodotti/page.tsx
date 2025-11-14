@@ -443,19 +443,19 @@ export default function Prodotti() {
                   }}>
                     {prodotto.nome}
                   </h3>
-                  <p className="price" style={{
-                    color: '#333',
-                    fontWeight: 600,
-                    marginBottom: '5px'
-                  }}>
-                    A partire da €{prodotto.prezzo.toFixed(2)}
-                  </p>
-                  <p className="weight" style={{
-                    color: '#666',
-                    margin: 0
-                  }}>
-                    {prodotto.grammaturaMin}
-                  </p>
+                  {(() => {
+                    const prezzoKg = prodotto.varianti.find(v => v.prezzoKg)?.prezzoKg;
+                    return prezzoKg && (
+                      <p className="price" style={{
+                        color: '#3498db',
+                        fontWeight: 700,
+                        fontSize: '1.5em',
+                        margin: 0
+                      }}>
+                        €{prezzoKg.toFixed(2)}/kg
+                      </p>
+                    );
+                  })()}
                 </div>
               </div>
             ))}
@@ -513,11 +513,21 @@ export default function Prodotti() {
               <h2 style={{
                 fontSize: '2em',
                 color: '#21618c',
-                marginBottom: '20px',
+                marginBottom: '10px',
                 fontWeight: 700
               }}>
                 {selectedProduct.nome}
               </h2>
+
+              {/* Prezzo al kg */}
+              {(() => {
+                const prezzoKg = selectedProduct.varianti.find(v => v.prezzoKg)?.prezzoKg;
+                return prezzoKg && (
+                  <div style={{ fontSize: '1.8em', color: '#3498db', fontWeight: 'bold', marginBottom: '20px' }}>
+                    €{prezzoKg.toFixed(2)}/kg
+                  </div>
+                );
+              })()}
 
               {/* Conservazione */}
               <div style={{ marginBottom: '20px' }}>
@@ -647,16 +657,7 @@ export default function Prodotti() {
                         gap: '4px'
                       }}
                     >
-                      <span>{variante.peso} - €{variante.prezzo.toFixed(2)}</span>
-                      {variante.prezzoKg && (
-                        <span style={{
-                          fontSize: '0.75em',
-                          fontWeight: 400,
-                          opacity: 0.7
-                        }}>
-                          (€{variante.prezzoKg.toFixed(2)}/kg)
-                        </span>
-                      )}
+                      <span>{variante.peso}</span>
                     </button>
                   ))}
                 </div>

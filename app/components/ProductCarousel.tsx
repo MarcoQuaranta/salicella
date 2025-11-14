@@ -263,9 +263,14 @@ export default function ProductCarousel() {
                     <h3 style={{ fontSize: '1.3em', color: '#21618c', marginBottom: '10px' }}>
                       {product.nome}
                     </h3>
-                    <div style={{ fontSize: '1.5em', color: '#3498db', fontWeight: 'bold', marginBottom: '15px' }}>
-                      da €{product.prezzo.toFixed(2)}
-                    </div>
+                    {(() => {
+                      const prezzoKg = product.varianti.find(v => v.prezzoKg)?.prezzoKg;
+                      return prezzoKg && (
+                        <div style={{ fontSize: '1.8em', color: '#3498db', fontWeight: 'bold', marginBottom: '15px' }}>
+                          €{prezzoKg.toFixed(2)}/kg
+                        </div>
+                      );
+                    })()}
                     <button
                       onClick={() => handleOpenProduct(product)}
                       style={{
@@ -341,11 +346,21 @@ export default function ProductCarousel() {
               <h2 style={{
                 fontSize: '2em',
                 color: '#21618c',
-                marginBottom: '20px',
+                marginBottom: '10px',
                 fontWeight: 700
               }}>
                 {selectedProduct.nome}
               </h2>
+
+              {/* Prezzo al kg */}
+              {(() => {
+                const prezzoKg = selectedProduct.varianti.find(v => v.prezzoKg)?.prezzoKg;
+                return prezzoKg && (
+                  <div style={{ fontSize: '1.8em', color: '#3498db', fontWeight: 'bold', marginBottom: '20px' }}>
+                    €{prezzoKg.toFixed(2)}/kg
+                  </div>
+                );
+              })()}
 
               {/* Conservazione */}
               <div style={{ marginBottom: '20px' }}>
@@ -475,16 +490,7 @@ export default function ProductCarousel() {
                         gap: '4px'
                       }}
                     >
-                      <span>{variante.peso} - €{variante.prezzo.toFixed(2)}</span>
-                      {variante.prezzoKg && (
-                        <span style={{
-                          fontSize: '0.75em',
-                          fontWeight: 400,
-                          opacity: 0.7
-                        }}>
-                          (€{variante.prezzoKg.toFixed(2)}/kg)
-                        </span>
-                      )}
+                      <span>{variante.peso}</span>
                     </button>
                   ))}
                 </div>

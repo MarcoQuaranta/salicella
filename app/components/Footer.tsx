@@ -42,7 +42,7 @@ export default function Footer() {
                   fontSize: '0.85em',
                   opacity: 0.9
                 }}>
-                  Dal 1952
+                  Dal 1993
                 </div>
               </div>
             </div>
@@ -52,8 +52,8 @@ export default function Footer() {
               fontSize: '0.95em',
               margin: 0
             }}>
-              Produciamo mozzarelle fresche e prodotti caseari artigianali seguendo
-              la tradizione campana da oltre 70 anni. Qualità, passione e autenticità
+              Produciamo mozzarella di bufala campana DOP e prodotti caseari artigianali
+              seguendo la tradizione campana da oltre 30 anni. Qualità, passione e autenticità
               in ogni prodotto.
             </p>
           </div>
@@ -153,7 +153,25 @@ export default function Footer() {
                 fontSize: '0.95em'
               }}>
                 <span style={{ fontSize: '1.2em' }}>📍</span>
-                <span>Via Giuseppe Garibaldi, 45<br />80100 Napoli (NA)</span>
+                <span>SP per Mondragone n.58<br />81050 Francolise (CE)</span>
+              </li>
+              <li style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '10px',
+                opacity: 0.9,
+                fontSize: '0.95em'
+              }}>
+                <span style={{ fontSize: '1.2em' }}>📱</span>
+                <a href="https://wa.me/393429575350" style={{
+                  color: '#25D366',
+                  textDecoration: 'none',
+                  transition: 'opacity 0.3s ease'
+                }}
+                className="footer-link"
+                >
+                  342 957 5350 (ordini)
+                </a>
               </li>
               <li style={{
                 display: 'flex',
@@ -163,14 +181,14 @@ export default function Footer() {
                 fontSize: '0.95em'
               }}>
                 <span style={{ fontSize: '1.2em' }}>📞</span>
-                <a href="tel:+390812345678" style={{
+                <a href="tel:+390823165611" style={{
                   color: 'white',
                   textDecoration: 'none',
                   transition: 'opacity 0.3s ease'
                 }}
                 className="footer-link"
                 >
-                  +39 081 234 5678
+                  0823 1656110
                 </a>
               </li>
               <li style={{
@@ -219,24 +237,16 @@ export default function Footer() {
                 justifyContent: 'space-between',
                 gap: '20px'
               }}>
-                <span>Lun - Ven:</span>
-                <span style={{ fontWeight: 600 }}>7:00 - 19:00</span>
+                <span>Lun - Sab:</span>
+                <span style={{ fontWeight: 600 }}>08:30 - 18:30</span>
               </li>
               <li style={{
                 display: 'flex',
                 justifyContent: 'space-between',
                 gap: '20px'
               }}>
-                <span>Sabato:</span>
-                <span style={{ fontWeight: 600 }}>7:00 - 13:00</span>
-              </li>
-              <li style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                gap: '20px'
-              }}>
-                <span>Domenica:</span>
-                <span style={{ fontWeight: 600 }}>Chiuso</span>
+                <span>Dom e Festivi:</span>
+                <span style={{ fontWeight: 600 }}>08:30 - 13:00</span>
               </li>
             </ul>
           </div>

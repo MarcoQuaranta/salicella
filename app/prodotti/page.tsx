@@ -299,7 +299,7 @@ export default function Prodotti() {
 
     const tipoText = selectedTipo ? ` ${selectedTipo} -` : '';
     const messaggio = `Richiesta ordine: ${selectedProduct.nome}${tipoText} ${selectedPeso} - €${prezzo}`;
-    const numeroWhatsApp = '393662822343'; // Formato internazionale
+    const numeroWhatsApp = '393429575350'; // Formato internazionale - ordini
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(messaggio)}`;
 
     window.open(url, '_blank');

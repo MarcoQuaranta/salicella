@@ -45,9 +45,9 @@ export default function MethodSection() {
         overflow: 'hidden'
       }}>
         {/* Immagini di sfondo laterali mobile */}
-        <div style={{ position: 'absolute', left: '-50px', top: '20%', width: '180px', height: '220px', background: 'url("https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400") center/cover', opacity: 0.08, borderRadius: '15px', transform: 'rotate(-8deg)', zIndex: 0 }}></div>
-        <div style={{ position: 'absolute', right: '-50px', top: '45%', width: '180px', height: '220px', background: 'url("https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400") center/cover', opacity: 0.08, borderRadius: '15px', transform: 'rotate(8deg)', zIndex: 0 }}></div>
-        <div style={{ position: 'absolute', left: '-50px', bottom: '15%', width: '180px', height: '220px', background: 'url("https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=400") center/cover', opacity: 0.08, borderRadius: '15px', transform: 'rotate(-8deg)', zIndex: 0 }}></div>
+        <div style={{ position: 'absolute', left: '-50px', top: '20%', width: '180px', height: '220px', background: 'url("/images/photo/10.jpg") center/cover', opacity: 0.08, borderRadius: '15px', transform: 'rotate(-8deg)', zIndex: 0, maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)' }}></div>
+        <div style={{ position: 'absolute', right: '-50px', top: '45%', width: '180px', height: '220px', background: 'url("/images/photo/11.jpg") center/cover', opacity: 0.08, borderRadius: '15px', transform: 'rotate(8deg)', zIndex: 0, maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)' }}></div>
+        <div style={{ position: 'absolute', left: '-50px', bottom: '15%', width: '180px', height: '220px', background: 'url("/images/photo/7.jpg") center/cover', opacity: 0.08, borderRadius: '15px', transform: 'rotate(-8deg)', zIndex: 0, maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)' }}></div>
 
         <div style={{ maxWidth: '1300px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <h2 style={{
@@ -413,10 +413,12 @@ export default function MethodSection() {
         top: '15%',
         width: '450px',
         height: '600px',
-        background: 'url("https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600") center/cover',
+        background: 'url("/images/photo/10.jpg") center/cover',
         opacity: 0.12,
         borderRadius: '30px',
-        transform: 'rotate(-8deg)'
+        transform: 'rotate(-8deg)',
+        maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)',
+        WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)'
       }}></div>
       <div style={{
         position: 'absolute',
@@ -424,21 +426,25 @@ export default function MethodSection() {
         top: '40%',
         width: '400px',
         height: '550px',
-        background: 'url("https://images.unsplash.com/photo-1452195100486-9cc805987862?w=600") center/cover',
+        background: 'url("/images/photo/11.jpg") center/cover',
         opacity: 0.12,
         borderRadius: '30px',
-        transform: 'rotate(8deg)'
+        transform: 'rotate(8deg)',
+        maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)',
+        WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)'
       }}></div>
       <div style={{
         position: 'absolute',
         left: '-150px',
-        bottom: '10%',
+        bottom: '5%',
         width: '450px',
         height: '600px',
-        background: 'url("https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=600") center/cover',
+        background: 'url("/images/photo/7.jpg") center/cover',
         opacity: 0.12,
         borderRadius: '30px',
-        transform: 'rotate(-8deg)'
+        transform: 'rotate(-8deg)',
+        maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)',
+        WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)'
       }}></div>
 
       <div style={{ maxWidth: '1300px', margin: '0 auto', position: 'relative', zIndex: 1 }}>

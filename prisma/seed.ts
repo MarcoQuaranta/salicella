@@ -48,7 +48,7 @@ const productsData = [
   },
   {
     nome: "Ciliegine di Bufala Campana DOP",
-    prezzo: 3.25, // 250g * €13.00/kg
+    prezzo: 3.38, // 250g * €13.50/kg
     immagine: "/images/prodotti/4.jpeg",
     popolarita: 4,
     attributes: {
@@ -57,15 +57,15 @@ const productsData = [
       descrizione: "Grammatura singola: 5g"
     },
     varianti: [
-      { tipo: "Barattolo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.00, prezzoKg: 13.00 }
+      { tipo: "Barattolo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "250g", prezzo: 3.38, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.50, prezzoKg: 13.50 }
     ]
   },
   {
     nome: "Bocconi di Bufala Campana DOP",
-    prezzo: 3.25, // 250g * €13.00/kg
+    prezzo: 3.38, // 250g * €13.50/kg
     immagine: "/images/prodotti/5.jpeg",
     popolarita: 5,
     attributes: {
@@ -74,16 +74,16 @@ const productsData = [
       descrizione: "Grammatura singola: 25g"
     },
     varianti: [
-      { tipo: "Termosaldato", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
-      { tipo: "Barattolo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.00, prezzoKg: 13.00 }
+      { tipo: "Termosaldato", peso: "250g", prezzo: 3.38, prezzoKg: 13.50 },
+      { tipo: "Barattolo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "250g", prezzo: 3.38, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.50, prezzoKg: 13.50 }
     ]
   },
   {
     nome: "Ovoline di Bufala Campana DOP",
-    prezzo: 3.25, // 250g * €13.00/kg
+    prezzo: 3.38, // 250g * €13.50/kg
     immagine: "/images/prodotti/6.jpeg",
     popolarita: 6,
     attributes: {
@@ -92,16 +92,16 @@ const productsData = [
       descrizione: "Grammatura singola: 50g"
     },
     varianti: [
-      { tipo: "Termosaldato", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
-      { tipo: "Barattolo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.00, prezzoKg: 13.00 }
+      { tipo: "Termosaldato", peso: "250g", prezzo: 3.38, prezzoKg: 13.50 },
+      { tipo: "Barattolo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "250g", prezzo: 3.38, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.50, prezzoKg: 13.50 }
     ]
   },
   {
     nome: "Treccine di Bufala Campana DOP",
-    prezzo: 3.25, // 250g * €13.00/kg
+    prezzo: 3.38, // 250g * €13.50/kg
     immagine: "/images/prodotti/7.jpeg",
     popolarita: 7,
     attributes: {
@@ -110,15 +110,15 @@ const productsData = [
       descrizione: "Grammatura: 150g (peso variabile)"
     },
     varianti: [
-      { tipo: "Termosaldato", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.00, prezzoKg: 13.00 }
+      { tipo: "Termosaldato", peso: "250g", prezzo: 3.38, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "250g", prezzo: 3.38, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.50, prezzoKg: 13.50 }
     ]
   },
   {
     nome: "Mozzarella di Bufala Campana DOP",
-    prezzo: 1.56, // 125g * €12.50/kg
+    prezzo: 1.63, // 125g * €13.00/kg
     immagine: "/images/prodotti/8.jpeg",
     popolarita: 8,
     attributes: {
@@ -126,13 +126,13 @@ const productsData = [
       ingredienti: "Latte di bufala, sale, caglio, fermenti lattici."
     },
     varianti: [
-      { tipo: "Termosaldato", peso: "125g", prezzo: 1.56, prezzoKg: 12.50 },
-      { tipo: "Termosaldato", peso: "250g", prezzo: 3.13, prezzoKg: 12.50 },
-      { tipo: "Barattolo", peso: "125g", prezzo: 1.56, prezzoKg: 12.50 },
-      { tipo: "Barattolo", peso: "250g", prezzo: 3.13, prezzoKg: 12.50 },
-      { tipo: "Barattolo", peso: "500g", prezzo: 6.25, prezzoKg: 12.50 },
-      { tipo: "Ciuffo", peso: "250g", prezzo: 3.13, prezzoKg: 12.50 },
-      { tipo: "Ciuffo", peso: "500g", prezzo: 6.25, prezzoKg: 12.50 }
+      { tipo: "Termosaldato", peso: "125g", prezzo: 1.63, prezzoKg: 13.00 },
+      { tipo: "Termosaldato", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
+      { tipo: "Barattolo", peso: "125g", prezzo: 1.63, prezzoKg: 13.00 },
+      { tipo: "Barattolo", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
+      { tipo: "Barattolo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
+      { tipo: "Ciuffo", peso: "250g", prezzo: 3.25, prezzoKg: 13.00 },
+      { tipo: "Ciuffo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 }
     ]
   },
   {
@@ -153,8 +153,8 @@ const productsData = [
   },
   {
     nome: "Treccia di Bufala Campana DOP",
-    prezzo: 6.50, // 500g * €13.00/kg
-    immagine: "/images/prodotti/10.png",
+    prezzo: 6.75, // 500g * €13.50/kg
+    immagine: "/images/prodotti/10.jpg",
     popolarita: 10,
     attributes: {
       conservazione: "Conservare in frigorifero da +6°C a +12°C.",
@@ -162,9 +162,9 @@ const productsData = [
       descrizione: "Grammatura: 500g - 1000g - 2000g (peso variabile)"
     },
     varianti: [
-      { tipo: "Ciuffo", peso: "500g", prezzo: 6.50, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.00, prezzoKg: 13.00 },
-      { tipo: "Ciuffo", peso: "2kg", prezzo: 26.00, prezzoKg: 13.00 }
+      { tipo: "Ciuffo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "1kg", prezzo: 13.50, prezzoKg: 13.50 },
+      { tipo: "Ciuffo", peso: "2kg", prezzo: 27.00, prezzoKg: 13.50 }
     ]
   },
   {

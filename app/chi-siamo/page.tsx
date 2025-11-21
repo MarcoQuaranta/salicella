@@ -49,11 +49,13 @@ export default function ChiSiamo() {
           transform: 'translateY(-50%)',
           width: '50%',
           height: '120%',
-          backgroundImage: 'url("https://images.unsplash.com/photo-1618164435735-413d3b066c9a?w=1200")',
+          backgroundImage: 'url("/images/photo/1.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center left',
           opacity: 0.15,
-          zIndex: 0
+          zIndex: 0,
+          maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)',
+          WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)'
         }}></div>
 
         <div style={{
@@ -74,7 +76,7 @@ export default function ChiSiamo() {
               marginBottom: '30px',
               fontWeight: 700
             }}>
-              60 anni di esperienza e tradizione
+              La Nostra Storia
             </h2>
             <p style={{
               fontSize: '1.1em',
@@ -82,13 +84,56 @@ export default function ChiSiamo() {
               lineHeight: 1.8,
               marginBottom: '20px'
             }}>
-La nostra mozzarella nasce dal latte di bufala, affidato alla maestria e alla sapienza dei nostri <strong>"maestri casari"</strong>, i cui segreti e le cui tradizioni provengono da un lungo viaggio tra <strong>ragione</strong> ed <strong>emozione</strong> a cavallo tra l'<strong>antico</strong> ed il <strong>moderno</strong>.            </p>
+              Il <strong>Caseificio Salicella</strong> nasce nel 1993. La nostra è una famiglia di allevatori e trasformatori di latte da oltre sessant'anni.
+            </p>
             <p style={{
               fontSize: '1.1em',
               color: '#555',
-              lineHeight: 1.8
+              lineHeight: 1.8,
+              marginBottom: '20px'
             }}>
-La mozarella di bufala <strong>Salicella</strong> ha ricevuto un'ottima valutazione da parte di <strong>Slow Food</strong> e dal <strong>Gambero Rosso</strong>, ricevendo in entrambi i casi il giudizio: <strong>ottima qualità</strong>.            </p>
+              Da noi si lavora la <strong>mozzarella di bufala campana DOP</strong> con lo stesso procedimento artigianale dettato dai nostri nonni e da antichi insegnamenti, nel pieno rispetto della natura e delle norme vigenti in materia di igiene e sicurezza alimentare.
+            </p>
+            <p style={{
+              fontSize: '1.1em',
+              color: '#555',
+              lineHeight: 1.8,
+              marginBottom: '20px'
+            }}>
+              Il latte per la lavorazione proviene dagli allevamenti bufalini dei soci della nostra cooperativa, da altri situati in aree limitrofe e dalla nostra azienda zootecnica, dove le bufale sono allevate a stabulazione semi-libera, controllate costantemente da tecnici specializzati e munte meccanicamente con tecnologia computerizzata avanzata.
+            </p>
+            <p style={{
+              fontSize: '1.1em',
+              color: '#555',
+              lineHeight: 1.8,
+              marginBottom: '20px'
+            }}>
+              La nostra mozzarella ha ricevuto un riconoscimento qualitativo da <strong>Slow Food</strong> e nel 2012 i <strong>tre spicchi</strong> tra i migliori formaggi d'Italia del <strong>Gambero Rosso</strong>. Vi consigliamo di provare anche la ricotta di bufala e le caciotte di bufala dolci e piccanti.
+            </p>
+            <p style={{
+              fontSize: '1.1em',
+              color: '#555',
+              lineHeight: 1.8,
+              marginBottom: '20px'
+            }}>
+              Esportiamo parte del prodotto in paesi comunitari ed extracomunitari. Siamo inoltre dotati di <strong>certificazione Halal</strong>, che garantisce la preparazione secondo i criteri e i valori della legge islamica e consente di esportare il prodotto nei paesi arabi, assecondando le esigenze del consumatore musulmano.
+            </p>
+            <p style={{
+              fontSize: '1.1em',
+              color: '#555',
+              lineHeight: 1.8,
+              marginBottom: '20px'
+            }}>
+              Nel 2007, attraverso l'Associazione Sportiva Culturale "Get Free", la nostra cooperativa ha partecipato come sponsor della maratona di New York.
+            </p>
+            <p style={{
+              fontSize: '1.1em',
+              color: '#555',
+              lineHeight: 1.8,
+              fontStyle: 'italic'
+            }}>
+              Ci trovate in località Salicella, da cui prende il nome il nostro caseificio, sulla strada provinciale in direzione Mondragone verso il mare, nel territorio di Francolise (CE).
+            </p>
           </div>
 
         </div>

@@ -3,7 +3,7 @@
 export default function HeroSection() {
   return (
     <section className="hero" style={{
-      background: 'linear-gradient(rgba(33, 97, 140, 0.35), rgba(52, 152, 219, 0.45)), url("https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=1600") center/cover',
+      background: 'linear-gradient(rgba(33, 97, 140, 0.35), rgba(52, 152, 219, 0.45)), url("/images/photo/20.jpg") center/cover',
       minHeight: '100vh',
       display: 'flex',
       alignItems: 'center',

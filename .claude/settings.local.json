@@ -14,7 +14,19 @@
       "Bash(rm:*)",
       "Bash(del nul \"C:salicellaREADME.md\" 2)",
       "Bash(gh --version:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git -C C:/salicella diff app/prodotti/page.tsx)",
+      "Bash(timeout /t 10 /nobreak)",
+      "Bash(ping:*)",
+      "Bash(taskkill /F /PID 12692)",
+      "Bash(taskkill //F //PID 12692)",
+      "Bash(curl:*)",
+      "Bash(git restore:*)",
+      "Bash(git checkout:*)",
+      "Bash(node fix-prodotti.js:*)",
+      "Bash(del C:salicellafix-prodotti.js)",
+      "Bash(git push:*)",
+      "Bash(bash)"
     ],
     "deny": [],
     "ask": []

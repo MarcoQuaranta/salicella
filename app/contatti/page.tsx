@@ -78,13 +78,44 @@ export default function Contatti() {
                   margin: 0,
                   paddingLeft: '40px'
                 }}>
-                  Sant'Andrea del Pizzone<br />
-                  81050, Caserta (CE)<br />
+                  Strada Provinciale per Mondragone n.58<br />
+                  81050, Francolise (CE)<br />
                   Italia
                 </p>
               </div>
 
-              {/* Telefono */}
+              {/* Telefono Ordini */}
+              <div style={{ marginBottom: '30px' }}>
+                <h3 style={{
+                  fontSize: '1.3em',
+                  color: '#21618c',
+                  marginBottom: '10px',
+                  fontWeight: 600,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px'
+                }}>
+                  <span style={{ fontSize: '1.5em' }}>📱</span>
+                  Ordini WhatsApp
+                </h3>
+                <p style={{
+                  fontSize: '1.1em',
+                  color: '#555',
+                  lineHeight: 1.6,
+                  margin: 0,
+                  paddingLeft: '40px'
+                }}>
+                  <a href="https://wa.me/393429575350" style={{
+                    color: '#25D366',
+                    textDecoration: 'none',
+                    fontWeight: 600
+                  }}>
+                    +39 342 957 5350
+                  </a>
+                </p>
+              </div>
+
+              {/* Telefono Info */}
               <div style={{ marginBottom: '30px' }}>
                 <h3 style={{
                   fontSize: '1.3em',
@@ -96,22 +127,29 @@ export default function Contatti() {
                   gap: '10px'
                 }}>
                   <span style={{ fontSize: '1.5em' }}>📞</span>
-                  Telefono
+                  Altre Informazioni
                 </h3>
                 <p style={{
                   fontSize: '1.1em',
                   color: '#555',
-                  lineHeight: 1.6,
+                  lineHeight: 1.8,
                   margin: 0,
                   paddingLeft: '40px'
                 }}>
+                  <a href="tel:+390823165611" style={{
+                    color: '#21618c',
+                    textDecoration: 'none',
+                    fontWeight: 600
+                  }}>
+                    0823 1656110
+                  </a> (fisso)<br />
                   <a href="tel:+393662822343" style={{
                     color: '#21618c',
                     textDecoration: 'none',
                     fontWeight: 600
                   }}>
                     +39 366 282 2343
-                  </a>
+                  </a> (cellulare)
                 </p>
               </div>
 
@@ -167,9 +205,8 @@ export default function Contatti() {
                   margin: 0,
                   paddingLeft: '40px'
                 }}>
-                  Lunedì - Venerdì: 8:00 - 18:00<br />
-                  Sabato: 8:00 - 13:00<br />
-                  Domenica: Chiuso
+                  Lunedì - Sabato: 08:30 - 18:30<br />
+                  Domenica e Festivi: 08:30 - 13:00
                 </p>
               </div>
 
@@ -195,7 +232,7 @@ export default function Contatti() {
                   paddingLeft: '40px',
                   fontWeight: 600
                 }}>
-                  IT 12345678901
+                  00980960611
                 </p>
               </div>
             </div>
@@ -208,7 +245,7 @@ export default function Contatti() {
               boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
             }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.1234567890!2d14.1234567!3d41.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDA3JzI0LjQiTiAxNMKwMDcnMjQuNCJF!5e0!3m2!1sit!2sit!4v1234567890123!5m2!1sit!2sit&q=Sant'Andrea+del+Pizzone,+81050+Caserta,+Italia"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.5!2d14.0544!3d41.1847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDExJzA0LjkiTiAxNMKwMDMnMTUuOCJF!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit&q=Strada+Provinciale+per+Mondragone+58,+81050+Francolise+CE"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -221,128 +258,6 @@ export default function Contatti() {
         </div>
       </section>
 
-      {/* Sezione Sedi */}
-      <section style={{
-        background: '#f8f9fa',
-        padding: '80px 20px'
-      }}>
-        <div style={{
-          maxWidth: '1400px',
-          margin: '0 auto'
-        }}>
-          <h2 style={{
-            fontSize: '2.5em',
-            color: '#21618c',
-            marginBottom: '50px',
-            fontWeight: 700,
-            textAlign: 'center'
-          }}>
-            Le Nostre Sedi
-          </h2>
-
-          <div className="sedi-grid" style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '40px'
-          }}>
-            {/* Sede 1 */}
-            <div style={{
-              background: 'white',
-              padding: '35px',
-              borderRadius: '20px',
-              boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-            }}
-            className="sede-card">
-              <h3 style={{
-                fontSize: '1.5em',
-                color: '#21618c',
-                marginBottom: '20px',
-                fontWeight: 700
-              }}>
-                Sede Principale
-              </h3>
-              <p style={{
-                fontSize: '1em',
-                color: '#555',
-                lineHeight: 1.8,
-                margin: 0
-              }}>
-                <strong>📍 Indirizzo:</strong><br />
-                Sant'Andrea del Pizzone<br />
-                81050, Caserta (CE)<br />
-                <br />
-                <strong>📞 Tel:</strong> +39 366 282 2343<br />
-                <strong>📧 Email:</strong> info@caseificiosalicella.it
-              </p>
-            </div>
-
-            {/* Sede 2 */}
-            <div style={{
-              background: 'white',
-              padding: '35px',
-              borderRadius: '20px',
-              boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-            }}
-            className="sede-card">
-              <h3 style={{
-                fontSize: '1.5em',
-                color: '#21618c',
-                marginBottom: '20px',
-                fontWeight: 700
-              }}>
-                Punto Vendita Napoli
-              </h3>
-              <p style={{
-                fontSize: '1em',
-                color: '#555',
-                lineHeight: 1.8,
-                margin: 0
-              }}>
-                <strong>📍 Indirizzo:</strong><br />
-                ViaExample 123<br />
-                80100, Napoli (NA)<br />
-                <br />
-                <strong>📞 Tel:</strong> +39 081 123 4567<br />
-                <strong>📧 Email:</strong> napoli@caseificiosalicella.it
-              </p>
-            </div>
-
-            {/* Sede 3 */}
-            <div style={{
-              background: 'white',
-              padding: '35px',
-              borderRadius: '20px',
-              boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-            }}
-            className="sede-card">
-              <h3 style={{
-                fontSize: '1.5em',
-                color: '#21618c',
-                marginBottom: '20px',
-                fontWeight: 700
-              }}>
-                Punto Vendita Roma
-              </h3>
-              <p style={{
-                fontSize: '1em',
-                color: '#555',
-                lineHeight: 1.8,
-                margin: 0
-              }}>
-                <strong>📍 Indirizzo:</strong><br />
-                Via Test 456<br />
-                00100, Roma (RM)<br />
-                <br />
-                <strong>📞 Tel:</strong> +39 06 987 6543<br />
-                <strong>📧 Email:</strong> roma@caseificiosalicella.it
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Sezione Certificazioni */}
       <section style={{

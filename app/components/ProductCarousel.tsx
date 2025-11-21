@@ -109,7 +109,7 @@ export default function ProductCarousel() {
 
     const tipoText = selectedTipo ? ` ${selectedTipo} -` : '';
     const messaggio = `Richiesta ordine: ${selectedProduct.nome}${tipoText} ${selectedPeso} - €${prezzo}`;
-    const numeroWhatsApp = '393662822343'; // Formato internazionale
+    const numeroWhatsApp = '393429575350'; // Formato internazionale - ordini
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(messaggio)}`;
 
     window.open(url, '_blank');
@@ -143,8 +143,8 @@ export default function ProductCarousel() {
   return (
     <section className="piu-amati" style={{ padding: '80px 20px', background: '#f8fbfd', position: 'relative', overflow: 'hidden' }}>
       {/* Immagini di sfondo laterali */}
-      <div style={{ position: 'absolute', left: '-80px', top: '15%', width: '350px', height: '450px', background: 'url("https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600") center/cover', opacity: 0.15, borderRadius: '25px', transform: 'rotate(-10deg)' }}></div>
-      <div style={{ position: 'absolute', right: '-100px', bottom: '15%', width: '380px', height: '480px', background: 'url("https://images.unsplash.com/photo-1452195100486-9cc805987862?w=600") center/cover', opacity: 0.15, borderRadius: '25px', transform: 'rotate(10deg)' }}></div>
+      <div style={{ position: 'absolute', left: '-80px', top: '15%', width: '350px', height: '450px', background: 'url("/images/photo/18.jpg") center/cover', opacity: 0.15, borderRadius: '25px', transform: 'rotate(-10deg)', maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)' }}></div>
+      <div style={{ position: 'absolute', right: '-100px', bottom: '15%', width: '380px', height: '480px', background: 'url("/images/photo/4.jpg") center/cover', opacity: 0.15, borderRadius: '25px', transform: 'rotate(10deg)', maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)', WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)' }}></div>
 
       <div style={{ maxWidth: '1200px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <h2 style={{ fontSize: '2.8em', color: '#21618c', textAlign: 'center', marginBottom: '20px' }}>

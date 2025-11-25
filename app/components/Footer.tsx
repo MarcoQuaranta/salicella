@@ -207,14 +207,14 @@ export default function Footer() {
                 fontSize: '0.95em'
               }}>
                 <span style={{ fontSize: '1.2em' }}>✉️</span>
-                <a href="mailto:info@salicella.com" style={{
+                <a href="mailto:gcsalicella@gmail.com" style={{
                   color: 'white',
                   textDecoration: 'none',
                   transition: 'opacity 0.3s ease'
                 }}
                 className="footer-link"
                 >
-                  info@salicella.com
+                  gcsalicella@gmail.com
                 </a>
               </li>
             </ul>

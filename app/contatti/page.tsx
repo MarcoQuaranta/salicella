@@ -174,12 +174,12 @@ export default function Contatti() {
                   margin: 0,
                   paddingLeft: '40px'
                 }}>
-                  <a href="mailto:info@salicella.com" style={{
+                  <a href="mailto:gcsalicella@gmail.com" style={{
                     color: '#21618c',
                     textDecoration: 'none',
                     fontWeight: 600
                   }}>
-                    info@salicella.com
+                    gcsalicella@gmail.com
                   </a>
                 </p>
               </div>

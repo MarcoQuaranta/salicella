@@ -29,7 +29,15 @@ export default function Footer() {
               gap: '12px',
               marginBottom: '20px'
             }}>
-              <div style={{ fontSize: '2.5em' }}>🧀</div>
+              <img
+                src="/images/logo.png"
+                alt="Caseificio Salicella"
+                style={{
+                  height: '80px',
+                  width: 'auto',
+                  filter: 'brightness(0) invert(1)'
+                }}
+              />
               <div>
                 <div style={{
                   fontSize: '1.4em',
@@ -199,14 +207,14 @@ export default function Footer() {
                 fontSize: '0.95em'
               }}>
                 <span style={{ fontSize: '1.2em' }}>✉️</span>
-                <a href="mailto:info@caseificiosalicella.it" style={{
+                <a href="mailto:info@salicella.com" style={{
                   color: 'white',
                   textDecoration: 'none',
                   transition: 'opacity 0.3s ease'
                 }}
                 className="footer-link"
                 >
-                  info@caseificiosalicella.it
+                  info@salicella.com
                 </a>
               </li>
             </ul>

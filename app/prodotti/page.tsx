@@ -13,6 +13,7 @@ type ProductType = {
   immagine: string;
   conservazione: string;
   ingredienti: string;
+  descrizione?: string;
   varianti: { tipo?: string; peso: string; prezzo: number; prezzoKg?: number }[];
   popolarita: number;
 };
@@ -519,9 +520,25 @@ export default function Prodotti() {
                 {selectedProduct.nome}
               </h2>
 
+              {/* Pezzatura (se presente) */}
+              {selectedProduct.descrizione && (
+                <div style={{
+                  fontSize: '1em',
+                  color: '#666',
+                  marginBottom: '15px',
+                  fontStyle: 'italic'
+                }}>
+                  {selectedProduct.descrizione}
+                </div>
+              )}
+
               {/* Prezzo al kg */}
               {(() => {
-                const prezzoKg = selectedProduct.varianti.find(v => v.prezzoKg)?.prezzoKg;
+                // Trova la variante selezionata per mostrare il prezzo corretto
+                const varianteSelezionata = selectedProduct.varianti.find(
+                  v => v.peso === selectedPeso && (!selectedTipo || v.tipo === selectedTipo)
+                );
+                const prezzoKg = varianteSelezionata?.prezzoKg;
                 return prezzoKg && (
                   <div style={{ fontSize: '1.8em', color: '#3498db', fontWeight: 'bold', marginBottom: '20px' }}>
                     €{prezzoKg.toFixed(2)}/kg

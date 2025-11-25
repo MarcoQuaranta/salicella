@@ -13,7 +13,7 @@ export default function Contatti() {
       <section style={{
         width: '100%',
         height: '300px',
-        background: 'linear-gradient(rgba(33, 97, 140, 0.8), rgba(33, 97, 140, 0.8)), url("/images/contatti.webp") center/cover',
+        background: 'linear-gradient(rgba(33, 97, 140, 0.8), rgba(33, 97, 140, 0.8)), url("/images/chi-siamo.jpg") center/cover',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -174,12 +174,12 @@ export default function Contatti() {
                   margin: 0,
                   paddingLeft: '40px'
                 }}>
-                  <a href="mailto:info@caseificiosalicella.it" style={{
+                  <a href="mailto:info@salicella.com" style={{
                     color: '#21618c',
                     textDecoration: 'none',
                     fontWeight: 600
                   }}>
-                    info@caseificiosalicella.it
+                    info@salicella.com
                   </a>
                 </p>
               </div>

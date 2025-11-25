@@ -54,7 +54,7 @@ const productsData = [
     attributes: {
       conservazione: "Conservare in frigorifero da +6°C a +12°C.",
       ingredienti: "Latte di bufala, sale, caglio, fermenti lattici.",
-      descrizione: "Grammatura singola: 5g"
+      descrizione: "Grammatura singola: 5-10gr"
     },
     varianti: [
       { tipo: "Barattolo", peso: "500g", prezzo: 6.75, prezzoKg: 13.50 },

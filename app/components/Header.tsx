@@ -40,7 +40,9 @@ export default function Header() {
         backdropFilter: isScrolled ? 'blur(10px)' : 'none',
         boxShadow: isScrolled ? '0 4px 20px rgba(0, 0, 0, 0.08)' : 'none',
         transition: 'background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease',
-        padding: '20px 0'
+        padding: '10px 0',
+        borderBottomLeftRadius: '20px',
+        borderBottomRightRadius: '20px'
       }}
     >
       <nav style={{
@@ -55,33 +57,19 @@ export default function Header() {
         <Link href="/" style={{
           textDecoration: 'none',
           display: 'flex',
-          alignItems: 'center',
-          gap: '12px'
+          alignItems: 'center'
         }}>
-          <div style={{
-            fontSize: '2.5em',
-            transition: 'transform 0.3s ease'
-          }}>🧀</div>
-          <div>
-            <div style={{
-              fontSize: '1.5em',
-              fontWeight: 700,
-              color: isScrolled ? '#21618c' : 'white',
-              transition: 'color 0.3s ease',
-              lineHeight: 1.2,
-              textShadow: isScrolled ? 'none' : '2px 2px 4px rgba(0,0,0,0.3)'
-            }}>
-              Caseificio Salicella
-            </div>
-            <div style={{
-              fontSize: '0.75em',
-              color: isScrolled ? '#3498db' : 'rgba(255,255,255,0.9)',
-              transition: 'color 0.3s ease',
-              textShadow: isScrolled ? 'none' : '1px 1px 2px rgba(0,0,0,0.3)'
-            }}>
-              Dal 1952
-            </div>
-          </div>
+          <img
+            src="/images/logo.png"
+            alt="Caseificio Salicella"
+            style={{
+              height: '80px',
+              width: 'auto',
+              transition: 'filter 0.4s ease-out',
+              filter: isScrolled ? 'none' : 'brightness(0) invert(1)',
+              willChange: 'filter'
+            }}
+          />
         </Link>
 
         {/* Menu Desktop */}
@@ -272,6 +260,14 @@ export default function Header() {
           </Link>
         </div>
       )}
+
+      <style jsx>{`
+        @media (max-width: 768px) {
+          img {
+            height: 60px !important;
+          }
+        }
+      `}</style>
     </header>
   );
 }

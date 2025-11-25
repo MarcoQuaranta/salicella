@@ -87,7 +87,7 @@ export default function MethodSection() {
             <div style={{
               width: '80px',
               height: '80px',
-              background: 'url("https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=300") center/cover',
+              background: 'url("/images/photo/6.jpg") center/cover',
               borderRadius: '50%',
               boxShadow: '0 4px 15px rgba(33, 97, 140, 0.25)',
               border: '4px solid white',
@@ -127,7 +127,7 @@ export default function MethodSection() {
             <div style={{
               width: '80px',
               height: '80px',
-              background: 'url("https://images.unsplash.com/photo-1618164435735-413d3b066c9a?w=300") center/cover',
+              background: 'url("/images/photo/25.jpg") center/cover',
               borderRadius: '50%',
               boxShadow: '0 4px 15px rgba(33, 97, 140, 0.25)',
               border: '4px solid white',
@@ -167,7 +167,7 @@ export default function MethodSection() {
             <div style={{
               width: '80px',
               height: '80px',
-              background: 'url("https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=300") center/cover',
+              background: 'url("/images/photo/21.jpg") center/cover',
               borderRadius: '50%',
               boxShadow: '0 4px 15px rgba(33, 97, 140, 0.25)',
               border: '4px solid white',
@@ -496,7 +496,7 @@ export default function MethodSection() {
             <div className="timeline-icon" style={{
               flex: '0 0 120px',
               height: '120px',
-              background: 'url("https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=300") center/cover',
+              background: 'url("/images/photo/6.jpg") center/cover',
               borderRadius: '50%',
               boxShadow: '0 10px 40px rgba(33, 97, 140, 0.25)',
               position: 'relative',
@@ -543,7 +543,7 @@ export default function MethodSection() {
             <div className="timeline-icon" style={{
               flex: '0 0 120px',
               height: '120px',
-              background: 'url("https://images.unsplash.com/photo-1618164435735-413d3b066c9a?w=300") center/cover',
+              background: 'url("/images/photo/25.jpg") center/cover',
               borderRadius: '50%',
               boxShadow: '0 10px 40px rgba(33, 97, 140, 0.25)',
               position: 'relative',
@@ -568,7 +568,7 @@ export default function MethodSection() {
             <div className="timeline-icon" style={{
               flex: '0 0 120px',
               height: '120px',
-              background: 'url("https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=300") center/cover',
+              background: 'url("/images/photo/21.jpg") center/cover',
               borderRadius: '50%',
               boxShadow: '0 10px 40px rgba(33, 97, 140, 0.25)',
               position: 'relative',

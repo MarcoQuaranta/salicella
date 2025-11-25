@@ -29,6 +29,7 @@ export async function GET() {
         immagine: product.immagine,
         conservazione: attributes.conservazione || '',
         ingredienti: attributes.ingredienti || '',
+        descrizione: attributes.descrizione || '',
         varianti: product.varianti.map((v: any) => {
           const variant: { tipo?: string; peso: string; prezzo: number; prezzoKg?: number } = {
             peso: v.peso,
